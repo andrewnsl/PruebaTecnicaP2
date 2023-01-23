@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <h2 class="text-center mt-4 mb-4">Puntos</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <input type="file" class="form-control" name="file" required id="flExcel" />
+            <div id="vlflExcel" style="display:none;" class="">
+                
+            </div>
+        </div>
+       <div class="col-md-4">
+            <button id="btnCargar" onclick="ShowData()" class="btn btn-primary">Cargar archivo</button>
+        </div>
+       
+    </div>
+    
+    <div id="tabla" class="mt-5">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        uid
+                    </th>
+                    <th>
+                        valor
+                    </th>
+                    <th>
+                        factura
+                    </th>
+                    <th>
+                        uid_cms
+                    </th>
+                    <th>
+                        Id sucursal
+                    </th>
+                    <th>
+                        Id comercio
+                    </th>
+                    <th>
+                        Id Transaccion
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tblBody">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="~/js/inicio.js"></script>
